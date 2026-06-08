@@ -1,0 +1,61 @@
+.wrap { padding: 20px; }
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.title {
+  color: var(--blue);
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.note { font-size: 9px; color: var(--steel); }
+
+.tableWrap { overflow-x: auto; }
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.table th {
+  background: var(--navy2);
+  color: var(--bronze);
+  padding: 7px 10px;
+  text-align: left;
+  letter-spacing: 1px;
+  border: 1px solid #1a3a4a;
+  font-size: 10px;
+}
+
+.table td {
+  padding: 7px 10px;
+  border: 1px solid #1a3a4a;
+  color: var(--beige);
+}
+
+.table tr:hover td { background: #0d2233; }
+
+.failRow td { background: #1a0808 !important; }
+.certCell   { color: var(--steel) !important; font-size: 10px; }
+.heatCell   { color: var(--blue) !important; font-weight: bold; }
+.passCell   { color: var(--green) !important; }
+.failCell   { color: var(--red) !important; font-weight: bold; }
+.completeCell { color: var(--green) !important; font-size: 10px; }
+.holdCell     { color: var(--red) !important; font-size: 10px; font-weight: bold; }
+.savedCell    { color: var(--steel) !important; font-size: 10px; }
+
+.empty {
+  padding: 80px 20px;
+  text-align: center;
+  color: var(--bronze);
+  font-size: 13px;
+}
+
+.emptyHint { color: var(--steel); font-size: 10px; margin-top: 8px; }

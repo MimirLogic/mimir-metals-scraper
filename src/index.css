@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Cinzel:wght@400;600&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy:   #0E2A3A;
+  --navy2:  #071a26;
+  --bronze: #8A6A4A;
+  --blue:   #2EC5FF;
+  --teal:   #1FA3C9;
+  --beige:  #E7E1D6;
+  --steel:  #9A8F82;
+  --text:   #2F2A25;
+  --green:  #4caf50;
+  --red:    #f44336;
+  --mono:   'Share Tech Mono', 'Courier New', monospace;
+  --serif:  'Cinzel', serif;
+}
+
+html { font-size: 14px; }
+
+body {
+  background: var(--navy2);
+  color: var(--beige);
+  font-family: var(--mono);
+  min-height: 100vh;
+}
+
+button { cursor: pointer; font-family: var(--mono); }
+input, select, textarea { font-family: var(--mono); }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--navy2); }
+::-webkit-scrollbar-thumb { background: var(--bronze); border-radius: 3px; }
+
+@media print {
+  body * { visibility: hidden; }
+  #cert-print-zone, #cert-print-zone * { visibility: visible; }
+  #cert-print-zone { position: fixed; top: 0; left: 0; width: 100%; }
+}

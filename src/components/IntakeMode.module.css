@@ -1,0 +1,230 @@
+.wrap { padding: 20px; }
+
+.keyBox {
+  background: var(--navy2);
+  border: 1px solid var(--blue);
+  border-radius: 4px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+}
+
+.keyRow { display: flex; gap: 8px; margin: 6px 0; }
+
+.hint { font-size: 10px; color: var(--steel); margin-top: 4px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
+
+.sectionTitle {
+  color: var(--blue);
+  font-size: 12px;
+  letter-spacing: 2px;
+  border-bottom: 1px solid var(--bronze);
+  padding-bottom: 6px;
+  margin-bottom: 14px;
+}
+
+.dropzone {
+  border: 2px dashed var(--bronze);
+  padding: 28px 20px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  background: var(--navy2);
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.dropzone:hover, .dragOver {
+  border-color: var(--blue);
+  background: #0a2030;
+}
+
+.dropIcon { font-size: 28px; margin-bottom: 8px; }
+.dropMain { color: var(--bronze); font-size: 13px; margin-bottom: 4px; }
+.dropSub { color: var(--steel); font-size: 10px; margin: 2px 0; }
+
+.fileList { margin: 10px 0; display: flex; flex-direction: column; gap: 4px; }
+
+.fileTag {
+  background: #0a2535;
+  border: 1px solid var(--teal);
+  color: var(--teal);
+  padding: 4px 10px;
+  font-size: 11px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.removeBtn {
+  background: none;
+  border: none;
+  color: var(--teal);
+  font-size: 16px;
+  padding: 0;
+  line-height: 1;
+}
+
+.removeBtn:hover { color: var(--red); }
+
+.primaryBtn {
+  background: var(--blue);
+  color: var(--navy);
+  border: none;
+  padding: 11px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  width: 100%;
+  border-radius: 3px;
+  margin-top: 12px;
+  transition: background 0.15s;
+}
+
+.primaryBtn:hover:not(:disabled) { background: var(--teal); }
+.primaryBtn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.spinner {
+  display: inline-block;
+  width: 12px; height: 12px;
+  border: 2px solid var(--navy);
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.docTypesRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.docBadge {
+  background: var(--navy2);
+  border: 1px solid var(--bronze);
+  color: var(--bronze);
+  padding: 2px 8px;
+  font-size: 10px;
+  border-radius: 3px;
+}
+
+.warnBox {
+  background: #2a1a0a;
+  border: 1px solid #8A6A4A;
+  border-radius: 3px;
+  padding: 10px 12px;
+  margin-top: 10px;
+}
+
+.warnTitle { color: #f5a623; font-size: 11px; margin-bottom: 6px; }
+.warnItem { color: var(--steel); font-size: 10px; margin: 2px 0; }
+
+.status {
+  padding: 9px 12px;
+  border-radius: 3px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.info    { background: #0a2535; border: 1px solid var(--blue);   color: var(--blue); }
+.success { background: #0a2518; border: 1px solid var(--green);  color: var(--green); }
+.error   { background: #250a0a; border: 1px solid var(--red);    color: var(--red); }
+
+.formScroll { max-height: 65vh; overflow-y: auto; padding-right: 4px; }
+
+.fieldRow { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 8px; }
+
+.field { display: flex; flex-direction: column; }
+
+.label {
+  font-size: 10px;
+  color: var(--bronze);
+  letter-spacing: 1px;
+  margin-bottom: 3px;
+}
+
+.input {
+  background: var(--navy2);
+  border: 1px solid var(--bronze);
+  color: var(--blue);
+  padding: 6px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.input:focus { outline: none; border-color: var(--blue); }
+
+.highlight { border-color: var(--blue); }
+
+.smallBtn {
+  background: var(--bronze);
+  color: var(--navy);
+  border: none;
+  padding: 6px 14px;
+  font-size: 11px;
+  font-weight: bold;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.groupLabel {
+  font-size: 10px;
+  color: var(--bronze);
+  letter-spacing: 2px;
+  margin: 14px 0 6px;
+  border-top: 1px solid #1a3a4a;
+  padding-top: 10px;
+}
+
+.chemGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.mechGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.saveBtn {
+  background: var(--green);
+  color: var(--navy);
+  border: none;
+  padding: 11px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  width: 100%;
+  border-radius: 3px;
+  margin-top: 14px;
+}
+
+.saveBtn:hover:not(:disabled) { background: #388e3c; }
+.saveBtn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.emptyState {
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--bronze);
+  font-size: 12px;
+}
+
+.emptyHint { color: var(--steel); font-size: 10px; margin-top: 6px; }
